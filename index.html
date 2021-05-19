@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-theme='dark'>
+
+
+<head>
+    <title>Collective Storyz | Marketing and Advertising Production Company</title>
+    <link rel="icon" href="/src/img/CSZ.png" sizes="32x32">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+
+    <!-- JavaScript -->
+    <script src="src/js/vendors.js"></script>
+
+
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="preload-container"></div>
+    <div class="preload-container">
+        <div id="preload-percentage">
+            8%
+        </div>
+        <div id="preload-progress-container">
+            <span class="preload-progress"></span>
+        </div>
+        <div id="pre-nika-logo">
+            <img src="src/img/CSZ.png" alt="Collective Storyz" title="Collective Storyz">
+        </div>
+    </div>
+    <button class="theme-switch" data-mode="dark">
+        <span class="visually-hidden">Change theme</span>
+
+        <span class="track">
+            <span class="sun">
+                <span class="moon"></span>
+            </span>
+        </span>
+
+        <span class="theme-label" data-text="auto"></span>
+        <span class="theme-label" data-text="light"></span>
+        <span class="theme-label" data-text="dark"></span>
+    </button>
+    <!-- nav Menu -->
+    <nav id="navigationWrap">
+        <div class="MenuOverlayBackground"></div>
+        <div class="nav-container">
+            <div class="header-menu menu-icon">
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button" id="closeNavbar">
+                    <div class="cross">
+                        <div class="cross-in left"></div>
+                        <div class="cross-in right"></div>
+                    </div>
+                </button>
+                <div class="header-menu logo mobile-only">
+                    <a href="index.html"><img src="src/img/CSZ.png" alt="Nika Labs" title="Nika Labs" /></a>
+                </div>
+            </div>
+            <nav class="nav-container-left">
+                <div class="header-menu logo desktop-only">
+                    <a href="index.html"><img src="src/img/CSZ.png" alt="Nika Labs" title="Nika Labs" /></a>
+                </div>
+                <ul class="main_nav">
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1s">
+                        <a id="home" data-img="" href="index-23.html">HOME</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.2s">
+                        <a id="works" data-img="" href="works.html">WORK</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
+                        <a id="about" data-img="" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
+                        <a id="thoughts" data-img="" href="thoughts.html">TEAM</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.8s">
+                        <a id="contacts" data-img="" href="index.html#contactUs">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-container-right">
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.2s">
+                    <p><span>Social</span></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Collective-Storyz-109118517926740" target="_blank"><span
+                                    data-hover="Facebook">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collective_storyz/" target="_blank"><span
+                                    data-hover="Instagram">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank"><span
+                                    data-hover="LinkedIn">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank"><span
+                                    data-hover="Youtube">Youtube</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.6s">
+                    <p class="emailMenu"><span>Say Hi!</span></p>
+                    <ul>
+                        <li>
+                            <a class="emailId" href="mailto:mail@gmail.com">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section class="panel banner leftMenu">
+            <div class="left-header">
+                <div class="header-section logo">
+                    <a href="index.html" class="scrollToFirst"><img src="src/img/CSZ.png" alt="Collective Storyz"
+                            title="Collective Storyz" /></a>
+                </div>
+                <div class="header-section menu-icon">
+                    <button class="menu-open_button" id="openNavbar">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header-section header-quote">
+                    <img src="src/img/essentianls/header-flower-icon.png" alt="Flower Icon" title="Flower Icon" />
+                    <p>
+                        <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
+                            </span><span>together!</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div data-router-wrapper>
+            <div data-router-view="home" class="home_page">
+                <canvas id="scene"></canvas>
+                <!-- scroll section -->
+                <div class="scroll-area">
+                    <!-- container for all horizontal scroll items -->
+                    <div class="scroll-wrapper">
+                        <section class="panel introSection" id="first">
+                            <div class="introContent">
+                                <!-- The video -->
+                                <video autoplay muted loop id="myVideo">
+                                    <source src="/src/video/Mouton-Noir-Video.mp4" type="video/mp4">
+                                </video>
+                                <div class="introContentWrap">
+                                    <div class="introMainContent">
+                                        <h2 class="we-design-build-head">
+                                            <div class="fadeInUp revolve-container">
+                                                ##
+                                                <span class="revolve-phrase"><span
+                                                        class="revolve-word">Collective</span>
+                                                    &nbsp;
+                                                    <span class="revolve-word">Storyz</span></span>
+
+                                                <span class="revolve-phrase"><span
+                                                        class="revolve-word">Collective</span>
+                                                    &nbsp;
+                                                    <span class="revolve-word">Storyz</span></span>
+
+                                                <span class="revolve-phrase"><span
+                                                        class="revolve-word">Collective</span>
+                                                    &nbsp;
+                                                    <span class="revolve-word">Storyz</span></span>
+
+                                                <span class="revolve-phrase"><span
+                                                        class="revolve-word">Collective</span>
+                                                    &nbsp;
+                                                    <span class="revolve-word">Storyz</span></span>
+                                            </div>
+                                        </h2>
+                                        <h2 class="brand-website-head">
+                                            <div class="fadeInUp">
+                                                We Create Wings for
+                                            </div>
+                                        </h2>
+                                        <h2 class="brand-website-head">
+                                            <div class="fadeInUp">
+                                                Your Storyz..........!!
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="skipContent fadeInUp">
+                                        <div id="q-intro-scroll">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                                viewBox="0 0 109.1 83.9" xml:space="preserve" id="drawIt">
+                                                <polyline class="st0" stroke-width="2" fill="none" stroke="white"
+                                                    points="0.5,34.5 0.5,34.5 0.5,49.4 80.2,49.4 46.2,83.4 67.2,83.4 98.1,52.5 108.6,42 98.1,31.5 67.2,0.5   46.2,0.5 80.2,34.5 0.5,34.5 ">
+                                                </polyline>
+                                            </svg>
+                                        </div>
+                                        <a href="javascript:void(0);" class="scrollTo">Scroll</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel sectionProject_news">
+                            <div class="panel">
+                                <div class="portfolio" id="portfolio">
+                                    <div id="portfolioWrap">
+                                        <h2 class="section-title" id="ourLatest">
+                                            <span>Our latest</span>
+                                        </h2>
+                                        <h2 class="section-title">
+                                            <span class="page-subtitle">works</span>
+                                        </h2>
+                                        <section class="content | scrollarea-ctn">
+                                            <div class="scrollarea | slideshow">
+                                                <ul class="slideshow-list">
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/temp.jpg"
+                                                                        data-hover=""
+                                                                        alt="KepNoodles" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Small description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Project name
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/temp.jpg"
+                                                                        data-hover=""
+                                                                        alt="ApothePure" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Small description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Project name
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/temp.jpg"
+                                                                        data-hover=""
+                                                                        alt="PathWater" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Small description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Project name
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/temp.jpg"
+                                                                        data-hover=""
+                                                                        alt="PathWater" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Small description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Project name
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/temp.jpg"
+                                                                        data-hover=""
+                                                                        alt="PathWater" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Small description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Project name
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slideshow__progress-ctn work_progressLine">
+                                                <span class="slideshow__progress"></span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Panel -->
+                            <div class="panel articlesBlk" id="articlesBlk">
+                                <div class="articlesBlk_wrap" id="thoughts">
+                                    <div class="good-thoughts-scroll">
+                                        <div class="projectTitle">
+                                            <div class="projectTitle_wrap">
+                                                <h2>Good thoughts</h2>
+                                                <h2>Good thoughts</h2>
+                                                <h2>Good thoughts</h2>
+                                                <h2>Good thoughts</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="mobile-only">Good thoughts</h2>
+                                    <div class="articlesBlk_inner">
+                                        <div class="shapeBlk">
+                                            <img src="src/img/essentianls/angle-shape.png" class="img-fluid desktop-only" />
+                                            <img src="src/img/essentianls/angle-shape-mobile.png" class="img-fluid mobile-only" />
+                                        </div>
+                                        <div class="article_inner">
+                                            <ul>
+                                                <li class="ar-in-fadeIn whiteTxt" style="
+                                                                background-color: #0a0a0a;
+                                                            ">
+                                                    <h5>ABOUT US</h5>
+                                                    <h4>
+                                                        <span>
+                                                            <a href="" target="_blank">max 3 lines About</a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" target="_blank">Collective Storyz</a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="" target="_blank">on click it will redirect to
+                                                                about page</a>
+                                                        </span>
+                                                    </h4>
+                                                    <div class="articleDate">
+                                                        more
+                                                    </div>
+                                                    <a target="_blank" href="" class="read_more">Read More</a>
+                                                </li>
+                                                <li class="ar-in-fadeIn whiteTxt" style="
+                                                                background-color: #0a0a0a;
+                                                            ">
+                                                    <h5>FOUNDERS</h5>
+                                                    <img src="src/img/essentianls/founders.png" width="370" alt="">
+
+
+                                                    <div class="articleDate">
+                                                        more
+                                                    </div>
+                                                    <a target="_blank" href="" class="read_more">Read More</a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li class="ar-in-fadeIn whiteTxt" style="
+                                                                background-color: #0a0a0a;background-image: url('src/img/essentianls/grouppic.jpg');background-size: cover;background-repeat: no-repeat
+                                                            ">
+                                                    <h5>OUR TEAM</h5>
+                                                    <a target="_blank" href="https://www.linkedin.com/">
+
+                                                    </a>
+                                                    <div class="articleDate">
+                                                        Know more
+                                                    </div>
+                                                    <a target="_blank" href="https://www.linkedin.com/"
+                                                        class="read_more">Read More</a>
+                                                </li>
+                                                <li class="ar-in-fadeIn seeMore" style="
+                                                                background-color: #0a0a0a;
+                                                            ">
+                                                    <img src="src/img/essentianls/social.png" width="300">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel contactUs" id="contactUs">
+                            <div class="projectTitle">
+                                <div class="projectTitle_wrap contact-heading">
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="contactWrap">
+                                <div class="contactDetails">
+                                    <iframe class="gmap"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.223420926385!2d77.48219231430608!3d13.08502209078151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae236e37165bc5%3A0x775c53e4d8c418b9!2sAcharya%20Institutes!5e0!3m2!1sen!2sin!4v1621347490243!5m2!1sen!2sin"
+                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <div class="contactDetails">
+                                    <div>
+                                        <a href="#">XXXXXXXXXXXXXX <br>XXXXXXX 654321</a>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+9919876543210">+91 98765 43210</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="contactUs mobile-only">
+                            <div class="copyrights">
+                                <a href="about.html"><span>© Collective Storyz 2021</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="cookies-notice">
+        <p>This website uses cookies.</p>
+
+        <button class="cookies-notice__close-btn">
+            <span class="hidden">Fermer</span>
+        </button>
+    </aside>
+    <button type='button' class="kill_delayedCall"
+        style="opacity: 0; visibility: hidden; width: 0; height: 0;"></button>
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>
