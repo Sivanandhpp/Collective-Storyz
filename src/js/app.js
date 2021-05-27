@@ -821,7 +821,7 @@
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, t), this.$els = {
                         document: e(document),
-                        cursor: e(".custom-cursor")
+                        cursor: e(".custom-cursors")
                     }, this.bindEvents()
                 }
                 var n, i, a;
