@@ -13,13 +13,16 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
 
     <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="src/js/vendors.js"></script>
-
 
 </head>
 
 <body>
     <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="preload-help"></div>
     <div class="preload-container"></div>
     <div class="preload-container">
         <div id="preload-percentage">
@@ -130,7 +133,7 @@
                     </button>
                 </div>
                 <div class="header-section header-quote">
-                    <img src="src/img/ui/play-button.png" width="20"/>
+                    <img src="src/img/ui/play-button.png" width="20" />
                     <p>
                         <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
                             </span><span>together!</span></a>
@@ -147,10 +150,12 @@
                     <div class="scroll-wrapper">
                         <section class="panel introSection" id="first">
                             <div class="introContent">
-                                <!-- The video -->
-                                <video autoplay muted loop id="myVideo">
-                                    <source src="src/video/Mouton-Noir-Video.mp4" type="video/mp4">
-                                </video>
+                                <div class="videosize">
+                                    <!-- The video -->
+                                    <video autoplay muted loop id="myVideo" class="introvContent">
+                                        <source src="src/video/Mouton-Noir-Video.mp4" type="video/mp4">
+                                    </video>
+                                </div>
                                 <div class="introContentWrap">
                                     <div class="introMainContent">
                                         <h2 class="we-design-build-head">
@@ -218,10 +223,10 @@
                                                 <ul class="slideshow-list">
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a href="">
+                                                            <a class="nop" href="">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt=""
-                                                                        class="tile__img" />
+                                                                    <img src="src/img/temp/temp.jpg" data-hover=""
+                                                                        alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -236,10 +241,10 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a href="">
+                                                            <a class="nop" href="">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt=""
-                                                                        class="tile__img" />
+                                                                    <img src="src/img/temp/temp.jpg" data-hover=""
+                                                                        alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -254,10 +259,10 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a href="">
+                                                            <a class="nop" href="">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt=""
-                                                                        class="tile__img" />
+                                                                    <img src="src/img/temp/temp.jpg" data-hover=""
+                                                                        alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -272,10 +277,10 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a href="">
+                                                            <a class="nop" href="">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt=""
-                                                                        class="tile__img" />
+                                                                    <img src="src/img/temp/temp.jpg" data-hover=""
+                                                                        alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -290,10 +295,10 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a href="">
+                                                            <a class="nop" href="">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt=""
-                                                                        class="tile__img" />
+                                                                    <img src="src/img/temp/temp.jpg" data-hover=""
+                                                                        alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -343,30 +348,36 @@
                                                     <h5>ABOUT US</h5>
                                                     <h4>
                                                         <span>
-                                                            <a href="" target="_blank">max 3 lines About</a>
+                                                            <a href="" target="_blank">“Create with the heart;</a>
                                                         </span>
                                                         <span>
-                                                            <a href="" target="_blank">Collective Storyz</a>
+                                                            <a href="" target="_blank"> build with the mind”</a>
                                                         </span>
                                                         <span>
-                                                            <a href="" target="_blank">on click it will redirect to
-                                                                about page</a>
+                                                            <a href="" target="_blank">- Criss
+                                                                Jami</a>
                                                         </span>
                                                     </h4>
                                                     <div class="articleDate">
-                                                        more
+                                                        Know more
                                                     </div>
                                                     <a target="_blank" href="" class="read_more">Read More</a>
                                                 </li>
-                                                <li class="ar-in-fadeIn whiteTxt" style="
-                                                                background-color: #0a0a0a;
-                                                            ">
+                                                <li class="ar-in-fadeIn whiteTxt imgbg">
                                                     <h5>FOUNDERS</h5>
-                                                    <img src="src/img/temp/founders.png" width="370" alt="">
 
+                                                    <div class="founders-name fn1">
+                                                        Pradeep Kumar Pathiyara
+                                                    </div>
+                                                    <div class="founders-name fn2">
+                                                        Dinjith Ayyathan
+                                                    </div>
+                                                    <div class="founders-name fn3">
+                                                        Rakesh Mantodi
+                                                    </div>
 
                                                     <div class="articleDate">
-                                                        more
+                                                        Know more
                                                     </div>
                                                     <a target="_blank" href="" class="read_more">Read More</a>
                                                 </li>
@@ -410,11 +421,12 @@
                                 <div class="contactDetails">
                                     <iframe class="gmap"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15716.415491818052!2d76.35486241899262!3d10.00827823552669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080b62a7688a1d%3A0xea20f6a86d090450!2sInfopark%20Campus%2C%20Kochi%2C%20Kerala%20682030!5e0!3m2!1sen!2sin!4v1621581107143!5m2!1sen!2sin"
-                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        style="border:0;" allowfullscreen="" loading="lazy" scrolling="yes"></iframe>
                                 </div>
                                 <div class="contactDetails">
                                     <div>
-                                        <a href="#">XXXXXXXXXXXXXX <br>XXXXXXX 654321</a>
+                                        <a href="#">Collective Storyz 44/981 <br>South janatha road <br> Palarivattam
+                                            Cochin 25.</a>
                                     </div>
                                     <div>
                                         <a href="mailto:mail@gmail.com">mail@gmail.com</a>
@@ -435,7 +447,7 @@
             </div>
         </div>
     </div>
-
+    <script src="src/js/cursor.js"></script>
     <script src="src/js/app.js"></script>
 </body>
 
