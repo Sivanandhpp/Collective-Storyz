@@ -4479,6 +4479,7 @@ hr {
   width: 3rem;
   height: 3rem;
   z-index: 9999;
+  mix-blend-mode: difference;
 }
 
 .custom-cursor::before,
@@ -4506,18 +4507,18 @@ hr {
 
 .cursor-follower {
   position: absolute;
-  background: blue;
+  background: white;
   width: 60px;
   height: 60px;
   border-radius: 100%;
   z-index: 9998;
-  opacity: 60%;
+  opacity: 100%;
   transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
   user-select: none;
   pointer-events: none;
   transform: translate(21px, 28px);
-
+  mix-blend-mode: difference;
 }
 
 .nop {
@@ -4530,74 +4531,6 @@ hr {
   transition-delay: 0s;
 }
 
-/* .MenuOverlayBackground .hover-reveal__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  opacity: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-} */
-
-/* .cookies-notice {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  right: 3.725vw;
-  bottom: 2rem;
-  left: 3.725vw;
-  z-index: 1011;
-  height: 5rem;
-  padding: 0.1rem 7.5rem 0 6rem;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  background: #131316;
-  border-radius: 1rem;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  pointer-events: all;
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  z-index: 10;
-}
-
-.cookies-notice:before {
-  content: "🍪";
-  position: absolute;
-  top: calc(50% - 1.3rem);
-  left: 1.5rem;
-  font-size: 2.5rem;
-  line-height: 1;
-}
-
-.cookies-notice a {
-  display: inline-block;
-}
-
-.cookies-notice a:not(:hover) {
-  text-decoration: underline;
-}
-
-.cookies-notice.is-closed {
-  pointer-events: none;
-  transform: translate3d(0, 10rem, 0);
-}
-
-.cookies-notice p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-[data-theme=light] .cookies-notice {
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-
-[data-theme=light] .cookies-notice p {
-  color: #000;
-} */
 
 @media only screen and (min-width: 768px) {
   .cookies-notice {
