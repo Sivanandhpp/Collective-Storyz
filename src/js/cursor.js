@@ -14,15 +14,15 @@ TweenMax.to({}, 0.016, {
 
     TweenMax.set(follower, {
       css: {
-        left: posX - 20,
-        top: posY - 20
+        left: posX - 50,
+        top: posY - 50
       }
     });
 
     TweenMax.set(cursor, {
       css: {
-        left: mouseX,
-        top: mouseY
+        left: mouseX - 28,
+        top: mouseY -30
       }
     });
   }
@@ -33,12 +33,12 @@ $(document).on("mousemove", function (e) {
   mouseY = e.pageY;
 });
 
-$(".portfolio-item img").on("mouseenter", function () {
+$(".active-mouse").on("mouseenter", function () {
   cursor.addClass("active");
   follower.addClass("active");
 });
 
-$(".portfolio-item img").on("mouseleave", function () {
+$(".active-mouse").on("mouseleave", function () {
   cursor.removeClass("active");
   follower.removeClass("active");
 });
