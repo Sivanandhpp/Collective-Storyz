@@ -606,7 +606,7 @@
                             duration: .8,
                             autoAlpha: 1,
                             x: 0,
-                            stagger: .6,
+                            stagger: .2,
                             onComplete: function () {
                                 e.isVisible = !0
                             }

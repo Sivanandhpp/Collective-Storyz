@@ -2654,10 +2654,10 @@ hr {
 
 .services_blk_wrap h4 {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   font-family: "IBM Plex Sans", sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   transition: color 0.3s ease;
 }
 
@@ -4536,7 +4536,7 @@ hr {
   background-color: #fff;
 }
 
-[data-theme=light].preload-container {
+[data-theme=light].preload-help+.preload-container {
   background-color: #182acc;
 }
 
