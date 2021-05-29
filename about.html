@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-theme='dark'>
+
+
+<head>
+    <title>Collective Storyz</title>
+    <link rel="icon" href="src/img/logo.png" sizes="32x32">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/cursor.css" />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="src/js/vendors.js"></script>
+
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="preload-help"></div>
+    <div class="preload-container"></div>
+    <div class="preload-container">
+        <div id="preload-percentage">
+            8%
+        </div>
+        <div id="preload-progress-container">
+            <span class="preload-progress"></span>
+        </div>
+        <div id="pre-nika-logo">
+            <img src="src/img/logo.png" alt="Collective Storyz" title="Collective Storyz">
+        </div>
+    </div>
+    <button class="theme-switch" data-mode="dark">
+        <span class="visually-hidden">Change theme</span>
+
+        <span class="track">
+            <span class="sun">
+                <span class="moon"></span>
+            </span>
+        </span>
+
+        <span class="theme-label" data-text="auto"></span>
+        <span class="theme-label" data-text="light"></span>
+        <span class="theme-label" data-text="dark"></span>
+    </button>
+    <!-- nav Menu -->
+    <nav id="navigationWrap">
+        <div class="MenuOverlayBackground"></div>
+        <div class="nav-container">
+            <div class="header-menu menu-icon">
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button" id="closeNavbar">
+                    <div class="cross">
+                        <div class="cross-in left"></div>
+                        <div class="cross-in right"></div>
+                    </div>
+                </button>
+                <div class="header-menu logo mobile-only">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Nika Labs" title="Nika Labs" /></a>
+                </div>
+            </div>
+            <nav class="nav-container-left">
+                <div class="header-menu logo desktop-only">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Nika Labs" title="Nika Labs" /></a>
+                </div>
+                <ul class="main_nav">
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1s">
+                        <a id="home" data-img="" href="index.html">HOME</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.2s">
+                        <a id="works" data-img="" href="works.html">WORK</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
+                        <a id="about" data-img="" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
+                        <a id="thoughts" data-img="" href="thoughts.html">TEAM</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.8s">
+                        <a id="contacts" data-img="" href="index.html#contactUs">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-container-right">
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.2s">
+                    <p><span>Social</span></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Collective-Storyz-109118517926740" target="_blank"><span
+                                    data-hover="Facebook">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collective_storyz/" target="_blank"><span
+                                    data-hover="Instagram">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank"><span
+                                    data-hover="LinkedIn">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank"><span
+                                    data-hover="Youtube">Youtube</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.6s">
+                    <p class="emailMenu"><span>Say Hi!</span></p>
+                    <ul>
+                        <li>
+                            <a class="emailId" href="mailto:mail@gmail.com">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section class="panel banner leftMenu">
+            <div class="left-header">
+                <div class="header-section logo">
+                    <a href="index.html" class="scrollToFirst"><img src="src/img/logo.png" alt="Collective Storyz"
+                            title="Collective Storyz" /></a>
+                </div>
+                <div class="header-section menu-icon">
+                    <button class="menu-open_button" id="openNavbar">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header-section header-quote">
+                    <img src="src/img/ui/play-button.png" width="20" />
+                    <p>
+                        <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
+                            </span><span>together!</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div data-router-wrapper>
+            <div data-router-view="about" class="about_page">
+                <!-- scroll section -->
+                <div class="scroll-area">
+                    <!-- container for all horizontal scroll items -->
+                    <div class="scroll-wrapper">
+                        <section class="panel">
+                            <div class="aboutProject aboutCompany">
+                                <div class="aboutCom_wrap">
+                                    <div class="projectTitle">
+                                        <div class="projectTitle_wrap who-we-are">
+                                            <h2>WHO WE ARE</h2>
+                                            <h2>WHO WE ARE</h2>
+                                            <h2>WHO WE ARE</h2>
+                                            <h2>WHO WE ARE</h2>
+                                            <h2>WHO WE ARE</h2>
+                                        </div>
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div class="aboutCom we-believe">
+                                        <div class="aboutCom-title">
+                                            <h2>What makes us</h2>
+                                            <h2>different.</h2>
+                                        </div>
+                                        <div class="abtintroblk">
+                                            <div class="abtintroblk_wrap">
+                                                <p>
+                                                    Our collective minds possess diversity.
+
+                                                </p>
+                                                <p>
+                                                    The linguistic, cultural and ideological differences in our team is
+                                                    the nucleus of our thought process, helping us narrate, visualize,
+                                                    and execute a story, irrespective of its genre or style.
+                                                </p>
+                                                <p>
+                                                    Give us a drop of your idea and we will return an ocean of it.
+                                                </p>
+                                            </div>
+                                            <div class="abtintroblk_wrap">
+                                                <p>
+                                                    We are/have a strong and well connected group of free thinkers who
+                                                    have marked expertise in their creative interests.
+                                                </p>
+                                                <p>
+                                                    Our brainstorming sessions resembles a war room. You never know when
+                                                    an idea could hit you.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel">
+                            <div class="circle"></div>
+                        </section>
+                        <section class="panel">
+                            <div class="teamScreens">
+                                <div class="teamScreensList">
+                                    <img src="src/img/temp/img1.jpg" />
+                                </div>
+                                <div class="teamScreensList">
+                                    <img src="src/img/temp/img1.jpg" />
+                                </div>
+                                <div class="teamScreensList">
+                                    <img src="src/img/temp/img1.jpg" />
+                                </div>
+                                <div class="teamScreensList">
+                                    <img src="src/img/temp/img1.jpg" />
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel">
+                            <div class="ourStrength_blk">
+                                <div class="aboutCom_wrap">
+                                    <div class="projectTitle to-be-good">
+                                        <div class="projectTitle_wrap">
+                                            <h2>
+                                                IT FEELS <span>GOOD,</span> TO BE
+                                                <span>GOOD</span>
+                                            </h2>
+                                            <h2>
+                                                IT FEELS <span>GOOD,</span> TO BE
+                                                <span>GOOD</span>
+                                            </h2>
+                                            <h2>
+                                                IT FEELS <span>GOOD,</span> TO BE
+                                                <span>GOOD</span>
+                                            </h2>
+                                            <h2>
+                                                IT FEELS <span>GOOD,</span> TO BE
+                                                <span>GOOD</span>
+                                            </h2>
+                                            <h2>
+                                                IT FEELS <span>GOOD,</span> TO BE
+                                                <span>GOOD</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div class="ourStrength_wrap">
+                                        <div class="opacity06">
+                                            <h4>About us</h4>
+                                        </div>
+                                        <div class="ourStrength">
+                                            <h3>
+                                                Our strength is in our dedicated
+                                                team.
+                                            </h3>
+                                            <div class="opacity06">
+                                                <p>
+                                                    It takes the collective effort of many creative minds to build a
+                                                    masterpiece. Each one of us has our own versions and perspective to
+                                                    a story. These versions, when combined, mould the story into the
+                                                    best version of itself.
+                                                </p>
+                                                <p>
+                                                    We are a panel of creative fanatics who
+                                                    strive to bring a story to its best version by racking up collective
+                                                    ideas from numerous creative minds
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projectActions">
+                                        <div class="projectActions_wrap">
+                                            <div class="nextSection">
+                                                <div id="q-intro-scroll">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                            x="0px" y="0px" viewBox="0 0 109.1 83.9"
+                                                            xml:space="preserve" id="drawIt">
+                                                            <polyline class="st0 introArrow" stroke-width="2"
+                                                                fill="none" stroke="white"
+                                                                points="0.5,34.5 0.5,34.5 0.5,49.4 80.2,49.4 46.2,83.4 67.2,83.4 98.1,52.5 108.6,42 98.1,31.5 67.2,0.5   46.2,0.5 80.2,34.5 0.5,34.5 "
+                                                                data-svg-origin="0.5 0.5"
+                                                                transform="matrix(1,0,0,1,0,0)" style="
+                                                                        stroke-dashoffset: 430px;
+                                                                        visibility: inherit;
+                                                                        opacity: 1;
+                                                                    "></polyline>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel services_panel">
+                            <div class="services_blk">
+                                <div class="services_blk_wrap">
+                                    <div class="opacity06">
+                                        <h3>What we care about</h3>
+                                    </div>
+                                    <div class="servicesList_wrap">
+                                        <div class="servicesList">
+                                            <h4>The Creative Journey</h4>
+                                            <ul>
+                                                <li>What binds the team together is our collective love for storytelling
+                                                    and our immense craving to create innovative content that challenges
+                                                    the boundaries of visual storytelling. In this journey, we plan to
+                                                    bring renowned talents and artists from across the country to make
+                                                    our vision, a visual reality.</li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="servicesList">
+                                            <h4>Creative Efficiency</h4>
+                                            <ul>
+                                                <li>Creativity without efficiency is like a spoiled portrait. So, we,
+                                                    Collective Storyz, prioritize on an efficient execution plan to
+                                                    execute our visualization into a satisfactory reality. We
+                                                    collectively strive to bring forth visual stories that the audience
+                                                    connects with and remembers. We also collaborate with like-minded
+                                                    creative professionals who believe in the quality of their work.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="servicesList">
+                                            <h4>Team Work</h4>
+                                            <ul>
+                                                <li>We believe that it takes a collective vision and effort of many to
+                                                    bring the best version of a story forward. Thereby, we collaborate
+                                                    with numerous innovative and creative minds to bring our stories to
+                                                    their full potential. A good story is well told when people unite,
+                                                    connect, and develop stronger, deeper bonds with each other. Come
+                                                    join us on our visual journey and let's tell great stories together!
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="servicesList">
+                                            <h4>Aim for the moon</h4>
+                                            <ul>
+                                                <li>Remember the saying that creativity has no limits or boundaries? We
+                                                    believe that there is always potential to grow and this way, we try
+                                                    to better ourselves in each endeavour we take. Moreover, growth is
+                                                    never by mere chance. It is the result of forces working together.
+                                                    “Only those who will risk going far can possibly find out how far
+                                                    one can go,” quoted T.S Elliot.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="servicesList">
+                                            <h4>Truth and Honesty</h4>
+                                            <ul>
+                                                <li>Honesty is the highest form of intimacy. Our team believes in being
+                                                    honest to ourselves and our work, thus collectively prioritizing the
+                                                    work and focusing on what matters in the outcome of the story. We
+                                                    make stories that stick, capture imaginations and engage the
+                                                    audiences.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="servicesList">
+                                            <h4>A pinch of fun</h4>
+                                            <ul>
+                                                <li>Having fun at work does not make one any less of an artist. It is
+                                                    said that "If work isn’t fun, you are not playing on the right
+                                                    team." “People rarely succeed unless they have fun in what they are
+                                                    doing”, quoted Dale Carnegie. A fun work environment brings the best
+                                                    out of an artist.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <section class="panel">
+                            <div class="aboutProject behindNika">
+                                <div class="aboutCom_wrap">
+                                    <div class="aboutCom">
+                                        <div class="aboutCom-title">
+                                            <h2><span>HUMAN'S</span></h2>
+                                            <h2>BEHIND NIKA</h2>
+                                        </div>
+                                        <div class="abtintroblk">
+                                            <div class="behindNikaPro">
+                                                <div class="profileList">
+                                                    <div class="profileImg">
+                                                        <img src="dist/img/about/Ali.png" />
+                                                    </div>
+                                                    <div class="nameSign">
+                                                        <h4>Ali Tassavor</h4>
+                                                        <div class="sign">
+                                                            <img src="dist/img/about/AliTassavor.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profileList">
+                                                    <div class="profileImg">
+                                                        <img src="dist/img/about/Ayman.png" />
+                                                    </div>
+                                                    <div class="nameSign">
+                                                        <h4>Ayman Eshaghpour</h4>
+                                                        <div class="sign">
+                                                            <img src="dist/img/about/AymanEshaghpour.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="abtbehindNikaPro_wrap">
+                                                <p>
+                                                    Nika is run by two partners,
+                                                    <i>Ali Tassavor</i> and
+                                                    <i>Ayman Eshaghpour</i>.
+                                                </p>
+                                                <p>
+                                                    They combined their experiences
+                                                    from the tech and creative
+                                                    worlds, to create the new yin and yang of today’s needs
+                                                </p>
+                                                <p>
+                                                    Prior to Nika the two worked for some of the biggest names in the
+                                                    industry, consistently producing award winning work. Ali’s
+                                                    technology background led him to groundbreaking companies like NASA
+                                                    and Disney. Ayman’s experience across 4 continents and legendary
+                                                    creative agencies like TBWA\Worldwide shaped his unique global
+                                                    creative perspective.
+                                                </p>
+                                                <p>
+                                                    The two then pooled in their talents and passion to build Nika, the
+                                                    award winning creative boutique.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel contactUs abtcontactUs" id="contactUs">
+                            <div class="contactWrap">
+                                <div class="projectTitle">
+                                    <div class="projectTitle_wrap">
+                                        <h2>
+                                            WE <span>LOOK</span> FORWARD TO HEARING FROM <span>YOU</span>.
+                                        </h2>
+                                        <h2>
+                                            WE <span>LOOK</span> FORWARD TO HEARING FROM <span>YOU</span>.
+                                        </h2>
+                                        <h2>
+                                            WE <span>LOOK</span> FORWARD TO HEARING FROM <span>YOU</span>.
+                                        </h2>
+                                        <h2>
+                                            WE <span>LOOK</span> FORWARD TO HEARING FROM <span>YOU</span>.
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="spacer"></div>
+                                <div class="abcontact_wrap">
+                                    <h4>Let's do <span>&nbsp;good together!</span> <img src="dist/img/flower-img.png" />
+                                    </h4>
+
+                                    <div class="socialLinks">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.facebook.com/nikalabs" target="_blank"><span
+                                                        data-hover="Facebook">Facebook</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/nikadigital/" target="_blank"><span
+                                                        data-hover="Instagram">Instagram</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nika-agency"
+                                                    target="_blank"><span data-hover="LinkedIn">LinkedIn</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://medium.com/nikaagency" target="_blank"><span
+                                                        data-hover="Medium">Medium</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                        <div class="contactUs mobile-only">
+                            <div class="copyrights">
+                                <a href="index.html"><span>© Collective-Storyz 2021</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/cursor.js"></script>
+    <script src="src/js/app.js"></script>
+
+</body>
+
+</html>
