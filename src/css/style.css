@@ -4575,6 +4575,10 @@ hr {
   color: #000;
 }
 
+[data-theme=light] .introvContent{
+  mix-blend-mode: difference;
+}
+
 .theme-switch {
   display: flex;
   position: fixed;
