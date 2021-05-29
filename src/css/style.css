@@ -3269,12 +3269,6 @@ hr {
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-  .custom-cursor {
-    display: none;
-  }
-}
-
 @media (max-width: 1200px) {
   .section-title {
     line-height: 65px;
@@ -3372,11 +3366,6 @@ hr {
     top: 90rem;
   }
 }
-
-@media (max-width: 1024px) {
-  .custom-cursor {
-    display: none;
-  }
 
   .nav-container-right {
     padding-left: 100px;
@@ -4468,64 +4457,8 @@ hr {
   opacity: 0;
 }
 
-/* Custom cursor - start */
 
-.custom-cursor {
-  position: absolute;
-  overflow: hidden;
-  transform: translateY(50%) rotate(120deg) skewY(30deg) scaleX(0.866);
-  pointer-events: none;
-  border-radius: 20%;
-  width: 3rem;
-  height: 3rem;
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
 
-.custom-cursor::before,
-.custom-cursor::after {
-  content: "";
-  position: absolute;
-  background: white;
-  pointer-events: auto;
-  width: 3rem;
-  height: 3rem;
-  pointer-events: none;
-}
-
-.custom-cursor::before {
-  transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(30deg) scaleY(0.866) translateX(-24%);
-  border-radius: 20% 20% 20% 55%;
-  pointer-events: none;
-}
-
-.custom-cursor::after {
-  transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(-30deg) scaleY(0.866) translateX(24%);
-  border-radius: 20% 20% 55% 20%;
-  pointer-events: none;
-}
-
-.cursor-follower {
-  position: absolute;
-  background: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  z-index: 9998;
-  opacity: 100%;
-  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-    0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  transform: translate(21px, 28px);
-  mix-blend-mode: difference;
-}
-
-.nop {
-  cursor: unset;
-}
-
-/* end */
 .scrollbar-track.show {
   opacity: 1;
   transition-delay: 0s;
@@ -4603,7 +4536,7 @@ hr {
   background-color: #fff;
 }
 
-[data-theme=light] .custom-cursor+.preload-container {
+[data-theme=light].preload-container {
   background-color: #182acc;
 }
 
