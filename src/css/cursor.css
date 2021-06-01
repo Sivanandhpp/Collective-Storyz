@@ -57,15 +57,7 @@
 
     .cursor-follower.active {
         opacity: 0%;
-    }
-
-    .custom-cursor.noc {
-        opacity: 0;
-    }
-
-    .cursor-follower.noc {
-        opacity: 0;
-    }
+    }   
 }
 
 /* end */

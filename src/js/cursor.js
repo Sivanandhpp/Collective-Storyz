@@ -42,11 +42,11 @@ $(".cursor-active").on("mouseleave", function () {
   follower.removeClass("active");
 });
 
-$(".control-vid").on("mouseenter", function () {
-  projVideo.play();
-  follower.addClass("active");
-});
-$(".control-vid").on("mouseleave", function () {
-  projVideo.pause();
-  follower.removeClass("active");
-});
+// $(".control-vid").on("mouseenter", function () {
+//   projvideo.play();
+//   follower.addClass("active");
+// });
+// $(".control-vid").on("mouseleave", function () {
+//   projvideo.pause();
+//   follower.removeClass("active");
+// });
