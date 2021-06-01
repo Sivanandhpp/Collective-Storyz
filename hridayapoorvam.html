@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-theme='dark'>
+
+
+<head>
+    <title>Collective Storyz</title>
+    <link rel="icon" href="src/img/logo.png" sizes="32x32">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/cursor.css" />
+
+    <!-- JavaScript -->
+
+    <script src="src/js/vendors.js"></script>
+
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="preload-help"></div>
+    <div class="preload-container"></div>
+    <div class="preload-container">
+        <div id="preload-percentage">
+            8%
+        </div>
+        <div id="preload-progress-container">
+            <span class="preload-progress"></span>
+        </div>
+        <div id="pre-nika-logo">
+            <img src="src/img/logo.png" alt="Collective Storyz" title="Collective Storyz">
+        </div>
+    </div>
+    <button class="theme-switch" data-mode="dark">
+        <span class="visually-hidden">Change theme</span>
+
+        <span class="track">
+            <span class="sun">
+                <span class="moon"></span>
+            </span>
+        </span>
+
+        <span class="theme-label" data-text="auto"></span>
+        <span class="theme-label" data-text="light"></span>
+        <span class="theme-label" data-text="dark"></span>
+    </button>
+    <!-- nav Menu -->
+    <nav id="navigationWrap">
+        <div class="MenuOverlayBackground"></div>
+        <div class="nav-container">
+            <div class="header-menu menu-icon">
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button" id="closeNavbar">
+                    <div class="cross">
+                        <div class="cross-in left"></div>
+                        <div class="cross-in right"></div>
+                    </div>
+                </button>
+                <div class="header-menu logo mobile-only">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
+                            title="Collective-Storyz" /></a>
+                </div>
+            </div>
+            <nav class="nav-container-left">
+                <div class="header-menu logo desktop-only cursor-active">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
+                            title="Collective-Storyz" /></a>
+                </div>
+                <ul class="main_nav">
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1s">
+                        <a id="home" data-img="" href="index.html">HOME</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.2s">
+                        <a id="works" data-img="" href="works.html">WORK</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
+                        <a id="about" data-img="" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
+                        <a id="thoughts" data-img="" href="team.html">TEAM</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.8s">
+                        <a id="contacts" data-img="" href="index.html#contactUs">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-container-right">
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.2s">
+                    <p><span>Social</span></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Collective-Storyz-109118517926740" target="_blank"><span
+                                    data-hover="Facebook">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collective_storyz/" target="_blank"><span
+                                    data-hover="Instagram">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank"><span
+                                    data-hover="LinkedIn">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg" target="_blank"><span
+                                    data-hover="Youtube">Youtube</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.6s">
+                    <p class="emailMenu"><span>Say Hi!</span></p>
+                    <ul>
+                        <li>
+                            <a class="emailId" href="mailto:mail@gmail.com">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section class="panel banner leftMenu">
+            <div class="left-header">
+                <div class="header-section logo">
+                    <a href="index.html" class="scrollToFirst cursor-active"><img src="src/img/logo.png"
+                            alt="Collective Storyz" title="Collective Storyz" /></a>
+                </div>
+                <div class="header-section menu-icon cursor-active">
+                    <button class="menu-open_button" id="openNavbar">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header-section header-quote">
+                    <img src="src/img/ui/play-button.png" width="20" />
+                    <p>
+                        <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
+                            </span><span>together!</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div data-router-wrapper>
+            <div data-router-view="workDetail" class="work_detail_page">
+                <div class="projectsActions">
+                    <div class="back-top-list">
+                        <a href="works.html"><span>Back to list</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 22 22"
+                                xml:space="preserve">
+                                <line class="st0" x1="0.4" y1="21.6" x2="21.5" y2="0.5"></line>
+                                <line class="st0" x1="21.5" y1="21.5" x2="0.5" y2="0.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="website-link">
+                        <a href="https://youtu.be/ejQ1qEpHFdE" target="_blank"><span>Visit Youtube</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 22 22"
+                                xml:space="preserve">
+                                <line class="st0" x1="0.1" y1="6" x2="16.2" y2="6"></line>
+                                <polyline class="st1" points="10.4,11.4 16.1,6 10.4,0.6 "></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- scroll section -->
+                <div class="scroll-area">
+                    <!-- container for all horizontal scroll items -->
+                    <div class="scroll-wrapper">
+                        <section class="panel">
+                            <div class="aboutProject workDetails">
+                                <div class="aboutProject_wrap">
+                                    <div class="projectTitle">
+                                        <div class="projectTitle_wrap">
+                                            <h2>Hridayapoorvam</h2>
+                                            <h2>Hridayapoorvam</h2>
+                                            <h2>Hridayapoorvam</h2>
+                                        </div>
+                                    </div>
+                                    <div class="inlineBlock spacer"></div>
+                                    <div class="inlineBlock projectsDetails">
+                                        <div class="projectsDetails_wrap">
+
+                                            <video loop id="projVideo" class="control-vid">
+                                                <source src="src/proj/hridayapoorvam.mp4" type="video/mp4">
+                                            </video>
+
+                                            <div class="projectDetails_Inner">
+                                                <div class="center-p">
+                                                    <h4>CLIENT</h4>
+                                                    <p>DYFI</p>
+                                                </div>
+                                                <div class="center-p">
+                                                    <p>Hridayapoorvam</p>
+                                                    <p>Election Campaign Ad</p>
+                                                </div>
+                                                <div class="center-p">
+                                                    <h4>YEAR</h4>
+                                                    <p>2021</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projectActions">
+                                        <div class="projectActions_wrap">
+                                            <div class="nextSection">
+                                                <div id="q-intro-scroll">
+                                                    <a href="javascript:void(0);">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                            x="0px" y="0px" viewBox="0 0 109.1 83.9"
+                                                            xml:space="preserve" id="drawIt">
+                                                            <polyline class="st0 introArrow" stroke-width="2"
+                                                                fill="none" stroke="white"
+                                                                points="0.5,34.5 0.5,34.5 0.5,49.4 80.2,49.4 46.2,83.4 67.2,83.4 98.1,52.5 108.6,42 98.1,31.5 67.2,0.5   46.2,0.5 80.2,34.5 0.5,34.5 ">
+                                                            </polyline>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel">
+                            <div class="storyBlk">
+                                <div class="storyWrap">
+                                    <div class="storyDetails inlineBlock">
+                                        <div class="storyDetails_wrap">
+                                            <h3>Hridayapoorvam - Election Campaign Ad</h3>
+                                            <h4>
+                                                Co-directed by our founders Dinjith Ayyathan and Rakesh Mantodi, this
+                                                advertisement was also made for DYFI’s 2021 election campaign. The video
+                                                tells a beautiful and empowering story about a family putting in their
+                                                effort to cook food for DYFI’s Hridayapoorvam campaign that donates food
+                                                to people in need. . The video was uploaded on Pinarayi Vijayan’s (the
+                                                honorable Chief Minister of Kerala) Facebook page. The video received a
+                                                huge response on social media, gained hundreds of thousands of views and
+                                                was shared across various social media platforms.
+                                            </h4>
+                                            <p>
+                                                Previous Chief Whip and Former Health Minister of Kerala, K.K Shailaja,
+                                                released the video on her official Facebook page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel">
+                            <div class="usedinProject">
+                                <div class="usedinProject_wrap">
+                                    <div class="useInleft inlineBlock">
+                                        <div class="useIn_wrap">
+                                            <div class="useIn_adv">
+                                                <div class="useIn_adv_list">
+                                                    <div class="useIn_adv_number small_useIn_adv_number"
+                                                        style="color: #000;">
+                                                        Team Behind
+                                                    </div>
+                                                    <div class="useIn_add_title small_useIn_add_title">
+                                                        Producer: Pradeep Kumar Pathiyara <br>
+                                                        Concept & Direction : Dinjith Ayyathan, Rakesh Mantodi<br>
+                                                        Director of Photography : Sharan Sasidharan<br>
+                                                        Music : Samuel Aby<br>
+                                                        Editor : Vinayan M.J<br>
+                                                        Creative Director : Manu Sebastian<br>
+                                                        Chief Associate Director: Rajeesh Velayudhan<br>
+                                                        Associate Producer: Nevil Thomas<br>
+                                                        Art Director : Nisanth Balan<br>
+                                                        Sound Design: Renju Raj Mathew<br>
+                                                        Makeup : Sujith Paravoor<br>
+                                                        Associate Directors: Sreehari Dharman, Nirmal Varghese<br>
+                                                        Chief Associate camera: Yukthiraj Kadalundi<br>
+                                                        Associate Dop : Sachin Ramachandran<br>
+                                                        Assistant Dop : Sandeep Krishnankutti<br>
+                                                        Art Associate : Yukthiraj Kadalundi , Basil V Edappattu<br>
+                                                        Finance Manager: Nikhil M.J<br>
+                                                        Production Executive : Arvind Reghu<br>
+                                                        Colorist : Liju Prabhakar (RangRays Media works)<br>
+                                                        Dubbing : Praveen Kumar<br>
+                                                        V.F.X : Sanju Tom<br>
+                                                        Graphics : Gokul (Keyframes Animation Studio)<br>
+                                                        Animation : Sharath Vinu<br>
+                                                        Camera and Equipment : Picazo Creations<br>
+                                                        Focus puller: Jinu<br>
+                                                        Camera assistant: Sarath<br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="panel">
+                            <div class="nextProject">
+                                <div class="nextProject_spacer"></div>
+                                <a class="nextProject_link" href="recycle-kerala.html"></a>
+                                <div class="nextprojectTitle">
+                                    <div class="nextprojectTitle_wrap">
+                                        <h2>NEXT</h2>
+                                        <div class="nextProject_arrow">
+                                            <img src="src/img/ui/nextproarrow.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="contactUs mobile-only">
+                            <div class="copyrights">
+                                <a href="index.html"><span>© Collective-Storyz 2021</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="src/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="src/js/cursor.js"></script>
+</body>
+
+</html>
