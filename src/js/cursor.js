@@ -1,5 +1,6 @@
 var cursor = $(".custom-cursor"),
-  follower = $(".cursor-follower");
+  follower = $(".cursor-follower"),
+  projvideo = $(".control-vid");
 
 var posX = 0,
   posY = 0,
@@ -22,7 +23,7 @@ TweenMax.to({}, 0.016, {
     TweenMax.set(cursor, {
       css: {
         left: mouseX - 25,
-        top: mouseY -35
+        top: mouseY - 35
       }
     });
   }
@@ -33,12 +34,19 @@ $(document).on("mousemove", function (e) {
   mouseY = e.pageY;
 });
 
-$(".redcursor").on("mouseenter", function () {
-  cursor.addClass("active");
+$(".cursor-active").on("mouseenter", function () {
   follower.addClass("active");
 });
 
-$(".redcursor").on("mouseleave", function () {
-  cursor.removeClass("active");
+$(".cursor-active").on("mouseleave", function () {
+  follower.removeClass("active");
+});
+
+$(".control-vid").on("mouseenter", function () {
+  projVideo.play();
+  follower.addClass("active");
+});
+$(".control-vid").on("mouseleave", function () {
+  projVideo.pause();
   follower.removeClass("active");
 });

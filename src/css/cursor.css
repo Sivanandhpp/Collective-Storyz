@@ -9,6 +9,7 @@
         width: 45px;
         height: 45px;
         z-index: 9999;
+        opacity: 100%;
         mix-blend-mode: difference;
     }
 
@@ -17,7 +18,6 @@
         content: "";
         position: absolute;
         background: white;
-        pointer-events: auto;
         width: 45px;
         height: 45px;
         pointer-events: none;
@@ -53,6 +53,18 @@
 
     .nop {
         cursor: unset;
+    }
+
+    .cursor-follower.active {
+        opacity: 0%;
+    }
+
+    .custom-cursor.noc {
+        opacity: 0;
+    }
+
+    .cursor-follower.noc {
+        opacity: 0;
     }
 }
 

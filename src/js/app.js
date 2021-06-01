@@ -3073,9 +3073,9 @@
                         var e = this;
                         this._initSiteScreenTL = function () {
                             setTimeout((function () {
-                                var t = document.querySelector(".siteScreens").clientHeight,
-                                    n = document.querySelector(".siteScreensList").clientHeight,
-                                    r = t - n;
+                                // var t = document.querySelector(".siteScreens").clientHeight,
+                                //     n = document.querySelector(".siteScreensList").clientHeight,
+                                //     r = t - n;
                                 console.log(t - n), e.siteScreenTL = o.a.timeline({
                                     paused: !0
                                 }).to(e.$els.siteScreen, {
