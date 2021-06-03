@@ -236,11 +236,11 @@
                     ! function (e, t) {
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, t), this.init(), window.screen.width > 767 && (this._init, this._bind, this.sections = {
-                        behind_nika: new h.a,
+                        behind_nika: new s.a,
                         contact_us: new p.a,
                         svg_animation: new d.a,
-                        ourStrengths: new u.a,
-                        services_blk: new f.a,
+                        ourStrengths: new s.a,
+                        services_blk: new s.a,
                         teamScreens: new l.a,
                         to_be_good: new m.a,
                         weBelieve: new c.a,
@@ -256,7 +256,7 @@
                         var t = this;
                         e("#contacts, .scrollToContact").attr("href", "index.html#contactUs"), e("#news").attr("href", "index.html#thoughts"), window.screen.width < 768 && (o.a.to(".projectTitle_wrap.who-we-are", {
                             duration: 1,
-                            x: "40%",
+                            x: "1%",
                             scrollTrigger: {
                                 trigger: ".projectTitle_wrap.who-we-are",
                                 start: "top " + e(".projectTitle_wrap.who-we-are").offset().top,
@@ -301,7 +301,7 @@
                     key: "bind",
                     value: function () {
                         var e = this;
-                        window.screen.width > 767 && (this._bind = function () {
+                        window.screen.width > 7670 && (this._bind = function () {
                             e._scroll.addListener((function (t) {
                                 var n = 100 * t.offset.x / t.limit.x;
                                 n <= 30 && e.sections.whoWeAre.animate(t), n >= 10 && n <= 100 && e.sections.to_be_good.animate(n, 10, 100), n <= 40 && e.sections.teamScreens.animate(n), n >= 23 && e.sections.ourStrengths.animate(), n >= 40 && e.sections.services_blk.animate(), n >= 60 && e.sections.behind_nika.animate(), n >= 90 && e.sections.contact_us.animate()
